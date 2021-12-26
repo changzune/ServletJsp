@@ -1,6 +1,8 @@
 package sec01.ex01;
 
-public class FristServlet {
+import javax.servlet.http.HttpServlet;
+
+public class FristServlet  extends HttpServlet{
 	
 
 }
