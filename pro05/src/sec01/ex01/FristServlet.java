@@ -11,8 +11,8 @@ public class FristServlet  extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("doget 메서드 호출");
-		//super.doGet(req, resp);
+		System.out.println("doGet 메서드 호출");
+	
 	}
 
 	@Override
