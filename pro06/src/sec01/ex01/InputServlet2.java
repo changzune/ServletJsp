@@ -31,3 +31,4 @@ public class InputServlet2 extends HttpServlet{
       System.out.println("destroy 메서드 호출");
    }
 }
+
