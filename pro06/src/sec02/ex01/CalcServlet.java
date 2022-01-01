@@ -48,7 +48,7 @@ public class CalcServlet extends HttpServlet {
 		pw.print("<input type='hidden' name='command' value='calculate'  />  ");
 		pw.println("<input type='submit' value='º¯È¯'  />");
 		pw.println("</form>");
-		pw.print("</html>");
+		pw.print("</form>");
 		pw.close();
 	}
 
