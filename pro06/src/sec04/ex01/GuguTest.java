@@ -28,10 +28,10 @@ public class GuguTest extends HttpServlet {
 
 		for (int i = 1; i < 10; i++) {
 			out.print("<tr align=center>");
-			out.print("<td width=400>");
+			out.print("<td width=500>");
 			out.print(dan + " *  " + i);
 			out.print("</td>");
-			out.print("<td width=400>");
+			out.print("<td width=500>");
 			out.print(i * dan);
 			out.print("</td>");
 			out.print("</tr>");
