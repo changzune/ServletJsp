@@ -6,8 +6,8 @@ public class PMemberTest
 {
 	private static final String driver = "oracle.jdbc.driver.OracleDriver";
 	private static final String url  = "jdbc:oracle:thin:@127.0.0.1:1521:XE";
-	private static final String user = "scott";
-	private static final String pwd = "tiger";
+	private static final String user = "SCOTT";
+	private static final String pwd = "1234";
 	private static final int intialCons = 5;
 	private static final int maxCons = 20;
 	private static final boolean block = true;
