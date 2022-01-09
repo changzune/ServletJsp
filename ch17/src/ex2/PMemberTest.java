@@ -8,6 +8,11 @@ public class PMemberTest
 	private static final String url  = "jdbc:oracle:thin:@127.0.0.1:1521:XE";
 	private static final String user = "scott";
 	private static final String pwd = "tiger";
+	private static final int intialCons = 5;
+	private static final int maxCons = 20;
+	private static final boolean block = true;
+	private static final long timeout = 10000;
+		
 
 	public static void main(String []args)
 	{
