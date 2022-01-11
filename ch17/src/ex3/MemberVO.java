@@ -16,6 +16,12 @@ public class MemberVO {
 		this.id = id;
 		this.name = name;
 	}
+	public MemberVO(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
 
 	public MemberVO(String id, String name, int height, int weight, int age) {
 		super();

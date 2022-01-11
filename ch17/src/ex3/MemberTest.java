@@ -4,11 +4,29 @@ import java.util.ArrayList;
 
 public class MemberTest {
 	public static void main(String[] args) {
+		
+		//String _name=null;
+		//_name="박지성";
+		MemberVO vo=new MemberVO("홍길동",24);
+		
 		MemberDAO dao = new MemberDAO();
-		ArrayList<MemberVO> list=dao.list();
 		
 		
-		for(int i=0; i>list.size(); i++) {
+		//dao.modMember(vo);
+		dao.delMember(vo);
+		
+		
+		//ArrayList<MemberVO> list=dao.list();
+		//ArrayList<MemberVO> list=dao.list(_name);
+		ArrayList<MemberVO> list=dao.list(vo);
+		
+		
+		if(list.size()==0) {
+			System.out.println("조회된 회원이 없습니다.");
+		}else {
+			
+		
+		for(int i=0; i<list.size(); i++) {
 			MemberVO data =(MemberVO) list.get(i);
 			String id = data.getId();
 			String name = data.getName();
@@ -21,11 +39,8 @@ public class MemberTest {
 								"키는>>"+height+
 								"몸무게는>>"+weight+
 								"나이는>>"+age);
-								
 			
-			
-			
-			
+		}
 		}
 		
 		
