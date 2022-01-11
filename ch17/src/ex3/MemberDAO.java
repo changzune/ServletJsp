@@ -17,7 +17,8 @@ public class MemberDAO {
     private ResultSet rs;	
     
     
-    public ArrayList<MemberVO> list(){
+    // public ArrayList<MemberVO> list(){
+    	public ArrayList<MemberVO> list(String _name){
     	ArrayList<MemberVO> list=new ArrayList<MemberVO>();
     	try{
     		connDB();
