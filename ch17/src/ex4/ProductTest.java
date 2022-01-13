@@ -5,14 +5,14 @@ import java.util.ArrayList;
 
 public class ProductTest {
 	public static void main(String []args){
-		ProdVO prod1 = new ProdVO();
+		//ProdVO prod1 = new ProdVO();
 		
-		//ProdTO prod2 =new ProdTO("x20120002","스마트 TV","그레이",200);
+		ProdVO prod2 =new ProdVO("x20120002","스마트 TV","그레이",200);
 		//ProdTO prod3 =new ProdTO("x20120003","노트북","블랙",300);
 		
 		ProdDAO dao  = new ProdDAO();  //DAO를 호출한다.
 		
-		dao.addProdInfo(prod1);
+		dao.addProdInfo(prod2);
 		ArrayList<ProdVO> list  = dao.listProdInfo();       //prodDao의 listProdInfo() 메서드를 호출하여 리턴값을  레코드를 담을 arraylist 객체에 담는다.
 		
 
@@ -23,10 +23,10 @@ public class ProductTest {
 				 String prodColor = prodData.getProdColor();
 				 int prodQty = prodData.getProdQty();
 				 
-				 System.out.println("제품번호는 >>" + prodCode  );
-				 System.out.println("제품이름은  >>"+prodName);
-				 System.out.println("제품색상은>>"+prodColor);
-				 System.out.println("제품입고 수량은>>" +prodQty);
+				 System.out.print("제품번호는 >>" + prodCode  );
+				 System.out.print("제품이름은  >>"+prodName);
+				 System.out.print("제품색상은>>"+prodColor);
+				 System.out.print("제품입고 수량은>>" +prodQty);
 				 System.out.println();
 		}//end for
 	}		
